@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="result" value="0" placeholder="0" readonly>    
+        </div>
+        <div class="row">
+            <button onclick="Clear()" class="opr">C</button>
+            <button onclick="Delete()" class="opr"><i class="fas fa-delete-left"></i></button>
+            <button onclick="Calculate('%')" class="opr">%</button>
+            <button onclick="Calculate('/')" class="opr"><i class="fas fa-divide"></i></button>
+        </div>
+
+        <div class="row">
+            <button onclick="Calculate('7')">7</button>
+            <button onclick="Calculate('8')">8</button>
+            <button onclick="Calculate('9')">9</button>
+            <button onclick="Calculate('*')" class="opr"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="row">
+            <button onclick="Calculate('4')">4</button>
+            <button onclick="Calculate('5')">5</button>
+            <button onclick="Calculate('6')">6</button>
+            <button onclick="Calculate('-')" class="opr"><i class="fas fa-minus"></i></button>
+        </div>
+        <div class="row">
+            <button onclick="Calculate('1')">1</button>
+            <button onclick="Calculate('2')">2</button>
+            <button onclick="Calculate('3')">3</button>
+            <button onclick="Calculate('+')" class="opr"><i class="fas fa-plus"></i></button>
+        </div>
+        <div class="row">
+            <button type="button" id="plusMinus" class="opr" ><i class="fas fa-arrows-rotate"></i></button>
+            <button onclick="Calculate('0')">0</button>
+            <button onclick="Calculate('.')">.</button>
+            <button onclick="CalculateResult()" class="eq"><i class="fas fa-equals"></i></button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
+
+    
